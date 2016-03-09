@@ -1,0 +1,5 @@
+I"=(function() {
+  window.alt = new Alt();
+
+}).call(this);
+:ET

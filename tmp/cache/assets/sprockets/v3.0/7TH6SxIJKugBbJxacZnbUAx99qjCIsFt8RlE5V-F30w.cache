@@ -1,0 +1,78 @@
+I"é(function() {
+  var TodoStore;
+
+  TodoStore = (function() {
+    TodoStore.displayName = 'TodoStore';
+
+    function TodoStore() {
+      this.bindActions(TodoActions);
+      this.todos = [];
+      this.exportPublicMethods({
+        getTodos: this.getTodos
+      });
+    }
+
+    TodoStore.prototype.onInitData = function(props) {
+      return this.todos = props.todos;
+    };
+
+    TodoStore.prototype.onSubmitTodo = function(name) {
+      $.ajax({
+        type: 'POST',
+        url: '/todos',
+        data: {
+          todo: {
+            name: name,
+            checked: false
+          }
+        },
+        success: (function(_this) {
+          return function(response) {
+            _this.todos.push(response);
+            return _this.emitChange();
+          };
+        })(this),
+        error: (function(_this) {
+          return function(response) {
+            console.log('error');
+            return console.log(response);
+          };
+        })(this)
+      });
+      return false;
+    };
+
+    TodoStore.prototype.onDeleteTodo = function(todo_id) {
+      $.ajax({
+        type: 'DELETE',
+        url: "/todos/" + todo_id,
+        success: (function(_this) {
+          return function(response) {
+            _this.todos.splice(_this.todo, {
+              id: response.id
+            });
+            return _this.emitChange();
+          };
+        })(this),
+        error: (function(_this) {
+          return function(response) {
+            console.log('error');
+            return console.log(response);
+          };
+        })(this)
+      });
+      return false;
+    };
+
+    TodoStore.prototype.getTodos = function() {
+      return this.getState().todos;
+    };
+
+    return TodoStore;
+
+  })();
+
+  window.TodoStore = alt.createStore(TodoStore);
+
+}).call(this);
+:ET

@@ -1,0 +1,96 @@
+I"†	(function() {
+  var TodoForm, TodoList, TodoListItem, a, div, h1, input, label, li, ref, span, ul;
+
+  ref = React.DOM, div = ref.div, h1 = ref.h1, ul = ref.ul, li = ref.li, a = ref.a, span = ref.span, label = ref.label, input = ref.input;
+
+  TodoForm = React.createFactory(React.createClass({
+    getInitialState: function() {
+      return {
+        todoName: ''
+      };
+    },
+    onInputChange: function(e) {
+      return this.setState({
+        todoName: e.target.value
+      });
+    },
+    onInputKeyDown: function(e) {
+      if (e.keyCode === 13 && this.refs.todo.value.length) {
+        TodoActions.submitTodo(this.refs.todo.value);
+        return this.setState({
+          todoName: ''
+        });
+      }
+    },
+    render: function() {
+      return div({
+        className: 'form-group'
+      }, label({}, 'Enter Todo'), input({
+        onChange: this.onInputChange,
+        onKeyDown: this.onInputKeyDown,
+        ref: 'todo',
+        className: 'form-control',
+        placeholder: 'Enter todo name',
+        value: this.state.todoName
+      }));
+    }
+  }));
+
+  TodoListItem = React.createFactory(React.createClass({
+    render: function() {
+      var todoListClasses;
+      todoListClasses = 'list-item';
+      return li({
+        className: todoListClasses
+      }, span({
+        className: 'list-text'
+      }, this.props.todo.name));
+    }
+  }));
+
+  TodoList = React.createFactory(React.createClass({
+    render: function() {
+      return ul({
+        className: 'list-unstyled'
+      }, _.map(this.props.todos, (function(_this) {
+        return function(todo) {
+          return TodoListItem({
+            key: "todo-" + todo.id,
+            todo: todo
+          });
+        };
+      })(this)));
+    }
+  }));
+
+  window.TodoIndex = React.createClass({
+    getInitialState: function() {
+      return {
+        todos: []
+      };
+    },
+    componentWillMount: function() {
+      TodoStore.listen(this.onChange);
+      return TodoActions.initData(this.props);
+    },
+    componentWillUnmount: function() {
+      return TodoStore.unlisten(this.onChange);
+    },
+    onChange: function(state) {
+      return this.setState(state);
+    },
+    render: function() {
+      return div({
+        className: 'container'
+      }, div({
+        className: 'row'
+      }, div({
+        className: 'col-xs-12'
+      }, h1({}, 'Todo List'), TodoForm(), TodoList({
+        todos: this.state.todos
+      }))));
+    }
+  });
+
+}).call(this);
+:ET

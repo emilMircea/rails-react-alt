@@ -1,0 +1,31 @@
+I"ã(function() {
+  var div, h1, li, ref, ul;
+
+  ref = React.DOM, div = ref.div, h1 = ref.h1, ul = ref.ul, li = ref.li;
+
+  window.TodoIndex = React.createClass({
+    render: function() {
+      return div({
+        className: 'container'
+      }, div({
+        className: 'row'
+      }, div({
+        className: 'col-xs-12'
+      }, h1({}, 'Todo List'), ul({
+        className: 'list-unstyled'
+      }, _.map(this.props.todos, (function(_this) {
+        return function(todo) {
+          return li({
+            className: 'list-item'
+          }, a({
+            className: 'btn btn-primary'
+          }, 'Check', span({
+            className: 'list-text'
+          }, todo.name)));
+        };
+      })(this))))));
+    }
+  });
+
+}).call(this);
+:ET

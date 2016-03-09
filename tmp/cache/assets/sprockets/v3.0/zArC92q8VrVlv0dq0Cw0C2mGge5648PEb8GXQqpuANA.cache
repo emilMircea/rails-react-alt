@@ -1,0 +1,18 @@
+I"—(function() {
+  var div, h1, li, ref, ul;
+
+  ref = React.DOM, div = ref.div, h1 = ref.h1, ul = ref.ul, li = ref.li;
+
+  window.TodoIndex = React.createClass({
+    render: function() {
+      div({}, h1({}, 'Todo List'));
+      return ul({}, _.map(this.props.todos, (function(_this) {
+        return function(todo) {
+          return li({}, todo.name);
+        };
+      })(this)));
+    }
+  });
+
+}).call(this);
+:ET

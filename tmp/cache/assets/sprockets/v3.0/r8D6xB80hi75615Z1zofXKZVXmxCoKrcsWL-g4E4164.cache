@@ -1,0 +1,16 @@
+I"(function() {
+  var TodoActions;
+
+  TodoActions = (function() {
+    function TodoActions() {
+      this.generateActions('initData', 'submitTodo', 'deleteTodo');
+    }
+
+    return TodoActions;
+
+  })();
+
+  window.TodoActions = alt.createActions(TodoActions);
+
+}).call(this);
+:ET
