@@ -31,22 +31,18 @@ class TodoStore
     return false
 
   onDeleteTodo: (todo_id) ->
-    #taskIndex = parseInt(todo_id.target.value, 10)
-    # logic to take out todo from js array
-    console.log @todos[0].id #  find the id of an obj
+
     @setState (state) =>
-      state.todos.splice(0, 1)
-      return todos: state.todos
-    # Ajax call to delete - works with controller
-    $.ajax
-      type: 'DELETE'
-      url: "/todos/#{todo_id}"
-      success: (response)=>
-        _.find(@todos, { id: response.id} ) # aici
-        @emitChange()
-      error: (response)=>
-        console.log('error')
-        console.log(response)
+      $.ajax
+        type: 'DELETE'
+        url: "/todos/#{todo_id}"
+        success: (response)=>
+          # aici gaseste todos si scoate by id cu lodash
+          _.find(@todos, _.remove( @todos, { id: response.id}) ) # aici
+          @emitChange()
+        error: (response)=>
+          console.log('error')
+          console.log(response)
 
     return false
 

@@ -56,4 +56,4 @@ TodoList = React.createFactory React.createClass
           div className: 'col-xs-12',
             h1 {}, 'Todo List'
             TodoForm()
-            TodoList(todos: @state.todos, deleteTask: @deleteTask)
+            TodoList(todos: @state.todos)

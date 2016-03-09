@@ -18861,3 +18861,2279 @@ Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216
 
 
 Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 13:12:46 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 13:22:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.3ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (8.2ms)
+  Rendered todos/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 1890ms (Views: 1881.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 13:22:20 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (1.5ms)
+  Rendered todos/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 13:22:20 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-4a85ae5d5951b5e4df891bb410159ebcf6ba0aa3be472fab03e95ee63023950e.js?body=1" for ::1 at 2016-03-09 13:22:20 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 16:44:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.4ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.3ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (9.0ms)
+  Rendered todos/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 305ms (Views: 293.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 16:44:04 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.3ms)
+  Rendered todos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 16:46:21 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"three"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "three"], ["created_at", "2016-03-09 15:46:21.061389"], ["updated_at", "2016-03-09 15:46:21.061389"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.6ms)
+Completed 200 OK in 17ms (Views: 8.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 16:46:29 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.0ms)
+  Rendered todos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-4a85ae5d5951b5e4df891bb410159ebcf6ba0aa3be472fab03e95ee63023950e.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 16:46:29 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 16:49:55 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (1.9ms)
+  Rendered todos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 361ms (Views: 360.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-6edb27ee1af2c653705af53f42b6ea137472ecb172c00ad911b96bc6bfb90adc.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 16:49:55 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 16:50:02 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.4ms)
+  Rendered todos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 16:50:02 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 16:50:02 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-6edb27ee1af2c653705af53f42b6ea137472ecb172c00ad911b96bc6bfb90adc.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 16:50:03 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 16:50:14 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.2ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.6ms)
+  Rendered todos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 290ms (Views: 289.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-dd86b4cfc097361bfc37ae3d9cc41b73410a977fbedcbb63543bff1d84bfc4f2.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 16:50:14 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 16:59:19 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.2ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.7ms)
+  Rendered todos/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 297ms (Views: 296.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-af60a0ffd20b4680e69e2d02142e23a29a0c009f05867256b25e5ab35a65b66a.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 16:59:19 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 16:59:45 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.0ms)
+  Rendered todos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 291ms (Views: 290.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-4f28f85a764744e1068469edf128897d4b5eae0bc860d64cbc1162951f3050f5.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 16:59:45 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 16:59:55 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.0ms)
+  Rendered todos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 300ms (Views: 299.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-d3c1ea173519508d9466a99e06260e6317e365796fec8e8251e9e35e0cf00b35.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 16:59:56 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 17:01:02 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.2ms)
+  Rendered todos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 289ms (Views: 288.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-74f625f77577b8cb9a421f18af9a9d6fff77695801d22555f7214e94087a295f.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 17:01:02 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 17:05:24 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.1ms)
+  Rendered todos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-74f625f77577b8cb9a421f18af9a9d6fff77695801d22555f7214e94087a295f.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-74f625f77577b8cb9a421f18af9a9d6fff77695801d22555f7214e94087a295f.js?body=1" for ::1 at 2016-03-09 17:05:24 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 17:09:54 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (1.9ms)
+  Rendered todos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 296ms (Views: 295.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/react/stores/todo_store.self-fa4b58091bd69324c57b21fe887aa63bcdb73457b904391a36202bbd5df95dd7.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 17:09:55 +0100
+
+
+Started DELETE "/todos/67" for ::1 at 2016-03-09 17:09:59 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"67"}
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "todos" WHERE "todos"."id" = ?[0m  [["id", 67]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 15ms (Views: 7.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 17:10:01 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (1.4ms)
+  Rendered todos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-fa4b58091bd69324c57b21fe887aa63bcdb73457b904391a36202bbd5df95dd7.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 17:10:01 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-fa4b58091bd69324c57b21fe887aa63bcdb73457b904391a36202bbd5df95dd7.js?body=1" for ::1 at 2016-03-09 17:10:02 +0100
+
+
+Started DELETE "/todos/69" for ::1 at 2016-03-09 17:10:05 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"69"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 69]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 69]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 17:10:07 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/index.json.jbuilder (1.2ms)
+  Rendered todos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 17:10:07 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 17:10:07 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 17:10:07 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 17:10:07 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 17:10:07 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 17:10:07 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 17:10:07 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 17:10:07 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 17:10:08 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 17:10:08 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 17:10:08 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-fa4b58091bd69324c57b21fe887aa63bcdb73457b904391a36202bbd5df95dd7.js?body=1" for ::1 at 2016-03-09 17:10:08 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 17:10:08 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 17:10:08 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 17:10:08 +0100
+
+
+Started DELETE "/todos/66" for ::1 at 2016-03-09 17:10:10 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"66"}
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1[0m  [["id", 66]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "todos" WHERE "todos"."id" = ?[0m  [["id", 66]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 17:10:11 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.json.jbuilder (0.4ms)
+  Rendered todos/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-fa4b58091bd69324c57b21fe887aa63bcdb73457b904391a36202bbd5df95dd7.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 17:10:11 +0100
+
+
+Started POST "/todos" for ::1 at 2016-03-09 17:10:14 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"one"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "one"], ["created_at", "2016-03-09 16:10:14.034753"], ["updated_at", "2016-03-09 16:10:14.034753"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 17:10:15 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"two "}}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "two "], ["created_at", "2016-03-09 16:10:15.922330"], ["updated_at", "2016-03-09 16:10:15.922330"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 17:10:17 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"three"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "three"], ["created_at", "2016-03-09 16:10:17.204769"], ["updated_at", "2016-03-09 16:10:17.204769"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/todos/72" for ::1 at 2016-03-09 18:27:54 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"72"}
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1[0m  [["id", 72]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "todos" WHERE "todos"."id" = ?[0m  [["id", 72]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 18:27:57 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (1.7ms)
+  Rendered todos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 323ms (Views: 322.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-55647db0018f75edc6dd975b6add8571649dff38d29677b01f409f45c7c36f3a.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:27:57 +0100
+
+
+Started DELETE "/todos/71" for ::1 at 2016-03-09 18:27:59 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"71"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 71]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 71]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.2ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 18:28:04 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/index.json.jbuilder (1.5ms)
+  Rendered todos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:28:04 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:28:04 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:28:04 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:28:04 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:28:04 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:28:04 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:28:05 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:28:05 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:28:05 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:28:05 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:28:05 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-55647db0018f75edc6dd975b6add8571649dff38d29677b01f409f45c7c36f3a.js?body=1" for ::1 at 2016-03-09 18:28:05 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:28:05 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:28:05 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:28:05 +0100
+
+
+Started DELETE "/todos/70" for ::1 at 2016-03-09 18:28:09 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"70"}
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "todos" WHERE "todos"."id" = ?[0m  [["id", 70]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 18:28:11 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.json.jbuilder (0.5ms)
+  Rendered todos/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-55647db0018f75edc6dd975b6add8571649dff38d29677b01f409f45c7c36f3a.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:28:11 +0100
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:28:15 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"one"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "one"], ["created_at", "2016-03-09 17:28:15.805344"], ["updated_at", "2016-03-09 17:28:15.805344"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:28:18 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"two"}}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "two"], ["created_at", "2016-03-09 17:28:18.255708"], ["updated_at", "2016-03-09 17:28:18.255708"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:28:19 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"three"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "three"], ["created_at", "2016-03-09 17:28:19.897732"], ["updated_at", "2016-03-09 17:28:19.897732"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 18:28:23 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/index.json.jbuilder (2.0ms)
+  Rendered todos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-55647db0018f75edc6dd975b6add8571649dff38d29677b01f409f45c7c36f3a.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:28:23 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:30:16 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.2ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/index.json.jbuilder (3.3ms)
+  Rendered todos/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 344ms (Views: 343.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-5ed2475b2a429150c2adfab2f48d0a8d8436658629f9ab99b0466562c466dcc0.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:30:17 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:30:29 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.2ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.5ms)
+  Rendered todos/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (SyntaxError: [stdin]:36:24: unexpected ]):
+    3: <head>
+    4:   <title>ReactRailsFluxScreencast</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___2275018550981186849_70166206603100'
+
+
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.6ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.0ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aramaic/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (79.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 18:31:15 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.2ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.4ms)
+  Rendered todos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 301ms (Views: 300.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-1272e97d8a12fe10067efb7ca07196ad414e9af9dcca66e200429d5dd2625cd5.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:31:15 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:31:26 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.2ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.2ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.6ms)
+  Rendered todos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 319ms (Views: 317.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-6bd0a62e4b60abc107857d3fbe4620f886615bd58207abcd4fd3e0a186cd3d0e.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:31:26 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:31:35 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.2ms)
+  Rendered todos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 331ms (Views: 329.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-155a0b2982bc91e3d947b77096c57fa995bd413c3c30be0b9ba61e23de0811f8.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:31:35 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:31:36 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:31:36 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:31:49 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.7ms)
+  Rendered todos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 315ms (Views: 314.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-1c0a1256b587fb7d4f7723bd77f403638d097d3b1b024beb3e8b896614ce8cb5.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:31:49 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:31:54 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.2ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/index.json.jbuilder (2.3ms)
+  Rendered todos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 307ms (Views: 306.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-a22a1b55f47a9c646c8b94c693b82a5dabd6e7d41707cc98ed200bb8498b5f20.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:31:55 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:33:43 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.4ms)
+  Rendered todos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 320ms (Views: 318.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:33:43 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/react/todoIndex.self-53bf2e290ada9a5d40e1cb8720699165a1b37d3ee8a358da70d08bc516ea9def.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-a22a1b55f47a9c646c8b94c693b82a5dabd6e7d41707cc98ed200bb8498b5f20.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:33:44 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:34:19 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.2ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.2ms)
+  Rendered todos/index.json.jbuilder (3.0ms)
+  Rendered todos/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:34:19 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:34:19 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:34:19 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-a22a1b55f47a9c646c8b94c693b82a5dabd6e7d41707cc98ed200bb8498b5f20.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:34:20 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:34:51 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (1.9ms)
+  Rendered todos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 330ms (Views: 329.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-a22a1b55f47a9c646c8b94c693b82a5dabd6e7d41707cc98ed200bb8498b5f20.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/react/todoIndex.self-7f9d046fd25b95f2b4c40eb4c9728fd6ca970cc17ff9293c6bc322d9502953c8.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:34:52 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:35:03 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.1ms)
+  Rendered todos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 305ms (Views: 304.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-b6731294862fdc7f681960f1192720d38eb06776792da530bbf663c6ca3708d7.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/react/todoIndex.self-7f9d046fd25b95f2b4c40eb4c9728fd6ca970cc17ff9293c6bc322d9502953c8.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:35:04 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:35:31 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.5ms)
+  Rendered todos/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 182ms (Views: 181.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-b6731294862fdc7f681960f1192720d38eb06776792da530bbf663c6ca3708d7.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/react/todoIndex.self-542c57865ec5e1b0a624f35eb9a81e51fc70d76cc921035fbd75543d2399a7e4.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:35:32 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:35:42 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (1.9ms)
+  Rendered todos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:35:42 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:35:42 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-b6731294862fdc7f681960f1192720d38eb06776792da530bbf663c6ca3708d7.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/react/todoIndex.self-7f9d046fd25b95f2b4c40eb4c9728fd6ca970cc17ff9293c6bc322d9502953c8.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:35:43 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:36:10 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.2ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (2.3ms)
+  Rendered todos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 302ms (Views: 301.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-940048322c8f6ab86d9520613d3a7b79f6a174b11f6509d9bdea7158b7917158.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/react/todoIndex.self-7f9d046fd25b95f2b4c40eb4c9728fd6ca970cc17ff9293c6bc322d9502953c8.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:36:11 +0100
+
+
+Started DELETE "/todos/75" for ::1 at 2016-03-09 18:36:11 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"75"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 75]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 75]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.2ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 18:36:13 +0100
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (1.8ms)
+  Rendered todos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-940048322c8f6ab86d9520613d3a7b79f6a174b11f6509d9bdea7158b7917158.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/react/todoIndex.self-7f9d046fd25b95f2b4c40eb4c9728fd6ca970cc17ff9293c6bc322d9502953c8.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:36:13 +0100
+
+
+Started GET "/" for ::1 at 2016-03-09 18:39:32 +0100
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/_todo.json.jbuilder (0.0ms)
+  Rendered todos/index.json.jbuilder (1.7ms)
+  Rendered todos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 294ms (Views: 293.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/todos.self-44434d8a85d8c888da6397a853ed4b207aa70604adde3153eb0e3d7b70448f79.css?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/application.self-3973ffff0ec26def74190c2ddb182c8560235a675ddbae460fcbdb3c842de2e1.css?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/react/stores/todo_store.self-ccce20d9e152cd04d43bf5334efd42857e61391eeb6ae4d3e508a2c0a690afd8.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/lodash.self-e9dc7c58e098af39eec17a45f297e2adc42e5c72a0d63b4a407dc46f056a2102.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/alt.self-514ee60403983d6745cc304dadbec66b056d3fa7b00b62aba3bd0858fe24fd78.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/initialize.self-25b4403ecabffe17b03919a539c33b32d8266ec8d4be8a65a239582cebd986de.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/react/actions/todo_actions.self-51181f4688078327e20391a01707ba3f983a609779f10e2622642f2b4d068c10.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/react/todoIndex.self-7f9d046fd25b95f2b4c40eb4c9728fd6ca970cc17ff9293c6bc322d9502953c8.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/components.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-03-09 18:39:33 +0100
+
+
+Started DELETE "/todos/74" for ::1 at 2016-03-09 18:39:34 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"74"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 74]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 74]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.2ms)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/todos/73" for ::1 at 2016-03-09 18:39:38 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"73"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 73]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 73]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.2ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:39:42 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"one"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "one"], ["created_at", "2016-03-09 17:39:42.742254"], ["updated_at", "2016-03-09 17:39:42.742254"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 17ms (Views: 7.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:39:44 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"two"}}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "two"], ["created_at", "2016-03-09 17:39:44.489252"], ["updated_at", "2016-03-09 17:39:44.489252"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:39:46 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"three"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "three"], ["created_at", "2016-03-09 17:39:46.794885"], ["updated_at", "2016-03-09 17:39:46.794885"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:39:49 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"four"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "four"], ["created_at", "2016-03-09 17:39:49.518138"], ["updated_at", "2016-03-09 17:39:49.518138"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.2ms)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:39:51 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"five"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "five"], ["created_at", "2016-03-09 17:39:51.429977"], ["updated_at", "2016-03-09 17:39:51.429977"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:39:53 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"six"}}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "six"], ["created_at", "2016-03-09 17:39:53.083173"], ["updated_at", "2016-03-09 17:39:53.083173"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:39:55 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"seven"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "seven"], ["created_at", "2016-03-09 17:39:55.074668"], ["updated_at", "2016-03-09 17:39:55.074668"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:39:57 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"eight"}}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "eight"], ["created_at", "2016-03-09 17:39:57.157362"], ["updated_at", "2016-03-09 17:39:57.157362"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:40:01 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"nine"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "nine"], ["created_at", "2016-03-09 17:40:01.679070"], ["updated_at", "2016-03-09 17:40:01.679070"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/todos" for ::1 at 2016-03-09 18:40:03 +0100
+Processing by TodosController#create as */*
+  Parameters: {"todo"=>{"name"=>"ten"}}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "todos" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "ten"], ["created_at", "2016-03-09 17:40:03.231986"], ["updated_at", "2016-03-09 17:40:03.231986"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/todos/80" for ::1 at 2016-03-09 18:40:04 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"80"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 80]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 80]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/todos/83" for ::1 at 2016-03-09 18:40:06 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"83"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 83]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 83]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/todos/77" for ::1 at 2016-03-09 18:40:10 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"77"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 77]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 77]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.2ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/todos/79" for ::1 at 2016-03-09 18:40:11 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"79"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 79]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 79]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/todos/85" for ::1 at 2016-03-09 18:40:12 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"85"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 85]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 85]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/todos/78" for ::1 at 2016-03-09 18:40:13 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"78"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 78]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 78]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/todos/76" for ::1 at 2016-03-09 18:40:14 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"76"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 76]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 76]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/todos/84" for ::1 at 2016-03-09 18:40:16 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"84"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 84]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 84]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/todos/82" for ::1 at 2016-03-09 18:40:18 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"82"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 82]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 82]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/todos/81" for ::1 at 2016-03-09 18:40:21 +0100
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"81"}
+  [1m[35mTodo Load (0.1ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1  [["id", 81]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = ?  [["id", 81]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  Rendered todos/_todo.json.jbuilder (0.1ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 1.2ms)
