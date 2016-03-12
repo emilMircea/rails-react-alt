@@ -10,8 +10,6 @@ TodoForm = React.createFactory React.createClass
     if e.keyCode == 13 && this.refs.todo.value.length
       TodoActions.submitTodo(this.refs.todo.value)
       @setState(todoName: "")
-  onDeleteTodo: ->
-    console.log 'tried to delete'
   render: ->
     div className: 'form-group',
       label {}, 'Enter Todo'
@@ -27,10 +25,13 @@ TodoForm = React.createFactory React.createClass
 TodoListItem = React.createFactory React.createClass
   onDeleteTodo: ->
     TodoActions.deleteTodo(@props.todo.id) # aici
+  onUpdateTodo: ->
+    TodoActions.updateTodo() # aici
   render: ->
     todoListClasses = 'list-item'
     li className: todoListClasses,
-      a onClick: @onDeleteTodo, className: 'btn btn-primary', 'Delete' # aici
+      a onClick: @onDeleteTodo, className: 'btn btn-danger', 'Delete' # aici
+      a onClick: @onUpdateTodo, className: 'btn btn-primary', 'Update' # aici
       span className: 'list-text', @props.todo.name
 
 # THE LIST
@@ -54,6 +55,6 @@ TodoList = React.createFactory React.createClass
       div className: 'container',
         div className: 'row',
           div className: 'col-xs-12',
-            h1 {}, 'Todo List Works!'
+            h1 {}, 'Todo List Update Branch!'
             TodoForm()
             TodoList(todos: @state.todos)

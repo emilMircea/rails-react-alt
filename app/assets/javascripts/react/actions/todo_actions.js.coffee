@@ -3,7 +3,8 @@ class TodoActions
     @generateActions(
       'initData',
       'submitTodo',
-      'deleteTodo'
+      'deleteTodo',
+      'updateTodo'
     )
 
 window.TodoActions = alt.createActions(TodoActions)
